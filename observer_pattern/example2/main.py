@@ -1,4 +1,4 @@
-class SubjectOne(object):
+class SubscriberOne(object):
 
     def __init__(self, name):
         self._name = name
@@ -7,7 +7,7 @@ class SubjectOne(object):
         print('{0} got message {1}'.format(self._name, message))
 
 
-class SubjectTwo(object):
+class SubscriberTwo(object):
 
     def __init__(self, name):
         self._name = name
@@ -35,8 +35,8 @@ class Publisher(object):
 
 pub = Publisher()
 
-john = SubjectOne('John')
-snow = SubjectTwo('snow')
+john = SubscriberOne('John')
+snow = SubscriberTwo('snow')
 
 pub.register(john, john.update)
 pub.register(snow, snow.receive)

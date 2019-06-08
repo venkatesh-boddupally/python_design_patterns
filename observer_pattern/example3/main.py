@@ -19,7 +19,7 @@ class Publisher:
         self.subscribers = dict()
 
     def register(self, who, callback=None):
-        if callback == None:
+        if callback is None:
             callback = getattr(who, 'update')
         self.subscribers[who] = callback
 
