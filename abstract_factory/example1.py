@@ -63,7 +63,7 @@ class ConcreteProductA1(AbstractProductA):
     """
 
     def interface_a(self):
-        pass
+        print('concrete product a1')
 
 
 class ConcreteProductA2(AbstractProductA):
@@ -74,7 +74,7 @@ class ConcreteProductA2(AbstractProductA):
     """
 
     def interface_a(self):
-        pass
+        print('concrete product a2')
 
 
 class AbstractProductB(metaclass=abc.ABCMeta):
@@ -95,7 +95,7 @@ class ConcreteProductB1(AbstractProductB):
     """
 
     def interface_b(self):
-        pass
+        print('concrete product b1')
 
 
 class ConcreteProductB2(AbstractProductB):
@@ -106,7 +106,7 @@ class ConcreteProductB2(AbstractProductB):
     """
 
     def interface_b(self):
-        pass
+        print('concrete product b2')
 
 
 def main():
